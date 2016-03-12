@@ -6,7 +6,10 @@
   <p class="range-field">
     <input type="range" id="stripe-amount" name="charge[amount]" min="1" max="10000" />
   </p>
-  <%= f.text_field :why, placeholder: "Why?" %>
+  <h5>
+    Why?
+  </h5>
+  <%= f.text_field :why %>
   <%= f.hidden_field :token, :id => "stripe-token", :class => 'stripe-token' %>
   <%= f.submit "submit", id: "stripe-submit" %>
 <% end %>

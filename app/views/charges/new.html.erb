@@ -4,7 +4,7 @@
     How much?
   </h5>
   <p class="range-field">
-    <input type="range" id="stripe-amount" name="charge[amount]" min="1" max="5000" />
+    <input type="range" id="stripe-amount" name="charge[amount]" min="1" max="10000" />
   </p>
   <%= f.text_field :why, placeholder: "Why?" %>
   <%= f.hidden_field :token, :id => "stripe-token", :class => 'stripe-token' %>
